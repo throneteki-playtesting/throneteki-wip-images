@@ -1,0 +1,563 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="grouped.css" />
+	</head>
+	<script>
+		window.onload = function() {
+			document.querySelectorAll('.auto-size').forEach(function(item) {
+			  let fontSize = parseInt(window.getComputedStyle(item, null).getPropertyValue("font-size"), 10);
+			  while(fontSize > 0 && (item.scrollHeight > item.clientHeight || item.scrollWidth > item.clientWidth)) {
+				  fontSize -= 0.5;
+				  item.style.fontSize = fontSize + "px";
+			  }
+			});
+
+			ScreenshotReady();
+		};
+	</script>
+
+	<body>
+		<div class="sheet">
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card character">
+				<div class="card-border border-martell">
+					<div class="upper-panels">
+						<div class="upper-left-panel">
+							<div class="gold-box auto-size">
+								<span class="card-cost">4</span>
+							</div>
+							<div class="type-box">
+								<span class="card-type">Character</span>
+							</div>
+							<div class="icon-box">
+								<span class="card-icon icon-military"></span>
+								<span class="card-icon icon-intrigue"></span>
+								<span class="card-icon icon-none"></span>
+							</div>
+						</div>
+						<div class="upper-middle-panel">
+							<div class="watermark-box">
+								<div class="card-code-box">
+									<span class="card-code">TSoW #24010</span>
+								</div>
+								<div class="card-version-box">
+									<span class="card-version">v1.0</span>
+								</div>
+								<div class="card-wip-box">
+									<span class="card-wip">Work in Progress</span>
+								</div>
+							</div>
+						</div>
+						<div class="upper-right-panel">
+							<div class="loyal-box">
+								<span class="card-loyal"></span>
+							</div>
+						</div>
+					</div>
+					<div class="center-panel">
+						<div class="strength-box auto-size">
+							<span class="card-strength">4</span>
+						</div>
+						<div class="name-box auto-size">
+							<span class="card-unique icon-unique"></span>
+							<span class="card-name">Ser Andrey Dalt</span>
+						</div>
+						<div class="faction-box">
+							<span class="card-faction icon-martell"></span>
+						</div>
+					</div>
+					<div class="bottom-panel">
+						<div class="text-box">
+							<div class="traits-box auto-size">
+								<span class="card-traits"><b><i>Knight.</b></i></span>
+							</div>
+							<div class="ability-box auto-size">
+								<span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+			<br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
