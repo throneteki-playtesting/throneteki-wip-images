@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: thronesdb;
+  src: url(https://throneteki-fonts.s3.us-west-1.amazonaws.com/thronesdb.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'thronesdb';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-baratheon:before {
+  content: "\e600";
+}
+.icon-greyjoy:before {
+  content: "\e601";
+}
+.icon-intrigue:before {
+  content: "\e602";
+}
+.icon-lannister:before {
+  content: "\e603";
+}
+.icon-martell:before {
+  content: "\e604";
+}
+.icon-military:before {
+  content: "\e605";
+}
+.icon-thenightswatch:before {
+  content: "\e606";
+}
+.icon-power:before {
+  content: "\e607";
+}
+.icon-stark:before {
+  content: "\e608";
+}
+.icon-targaryen:before {
+  content: "\e609";
+}
+.icon-tyrell:before {
+  content: "\e60a";
+}
+.icon-unique:before {
+  content: "\e60b";
+}
+.icon-plot:before {
+  content: "\e60c";
+}
+.icon-location:before {
+  content: "\e60e";
+}
+.icon-character:before {
+  content: "\e60f";
+}
+.icon-event:before {
+  content: "\e610";
+}
+.icon-agenda:before {
+  content: "\e611";
+}
+.icon-attachment:before {
+  content: "\e60d";
+}
+.icon-neutral:before {
+  content: "\e612";
+}
+
+.border-baratheon{
+  border-color: #E3D852;
+}
+.border-greyjoy {
+  border-color: #1D7A99;
+}
+.border-lannister {
+  border-color: #C00106;
+}
+.border-martell {
+  border-color: #E89521;
+}
+.border-thenightswatch {
+  border-color: #7A7A7A;
+}
+.border-stark {
+  border-color: #CFCFCF;
+}
+.border-targaryen {
+  border-color: #1C1C1C;
+}
+.border-tyrell {
+  border-color: #509F16;
+}
+.border-neutral{
+  border-color: #A99560;
+}
+
+body {
+  margin: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 2480px;
+  height: 3508px;
+}
+
+.sheet {
+  transform: scale(1);
+  transform-origin: 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  margin: 0px;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+}
+.card-border {
+  width: 640px; /* 274px */ /* 750 - 80 = 670 */
+  height: 959px; /* 389px */ /* 1039 - 80 = 959 */
+  border-radius: 50px; /* 15px */
+  border-style: solid;
+  border-width: 50px; /* 15px */
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.upper-panels {
+  height: 450px; /* 190px */
+  display: flex;
+}
+
+.upper-left-panel {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.gold-box {
+  position: relative;
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: white;
+  text-align: center;
+  font-size: 70px;
+}
+
+.type-box {
+  position: relative;
+  top: -7px;
+  left: 3px;
+  font-size: 25px;
+}
+
+.icon-box {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon {
+  flex-grow: 1;
+  font-size: 60px;
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-middle-panel {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.watermark-box {
+  flex-grow: 1;
+  display: flex;
+  color: #EAEAEA;
+  font-weight: bold;
+  font-size: 42px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  padding: 50px 0px 0px 0px;
+}
+
+.card-version-box {
+  height: 120px;
+  font-size: 120px;
+  line-height: 120px;
+}
+
+.upper-right-panel {
+  height: 100%;
+  width: 100px;
+  display: flex;
+}
+
+.loyal-box {
+  text-align: center;
+  font-size: 30px;
+  width: 100px;
+  height: 35px;
+  align-self: flex-end;
+}
+
+.center-panel {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.strength-box {
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  background-color: #ebebeb;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 70px;
+  box-sizing: border-box;
+}
+
+.name-box {
+  height: 80px;
+  align-self: flex-end;
+  flex-grow: 1;
+  background-color: white;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  text-align: center;
+  line-height: 70px;
+  font-size: 42px;
+  box-sizing: border-box;
+  padding: 0px 20px 0px 20px;
+}
+
+.faction-box {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  background-color: white;
+  border: 5px solid black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-panel {
+  display: flex;
+  height: 382px;
+  flex-flow: column wrap;
+}
+
+.text-box {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px 20px 10px 20px;
+  height: 100%;
+  font-family: 'Crimson Text', serif;
+}
+
+.traits-box {
+  text-align: center;
+  font-size: 38px;
+  padding-bottom: 20px;
+  height: 46px;
+}
+
+.ability-box {
+  font-size: 38px;
+  height: 290px;
+}
+
+.card-ability br {
+  display: block;
+  content: "";
+  margin-top: 0.5em;
+}
+
+.card-ability i {
+  font-weight: 700;
+  font-style: italic;
+}
