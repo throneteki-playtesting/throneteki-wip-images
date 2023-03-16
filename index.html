@@ -1,277 +1,268 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="./playtesting_sheet.css" />
 	</head>
-	<script>
-		window.onload = function() {
-			document.querySelectorAll('.auto-size').forEach(function(item) {
-			  let fontSize = parseInt(window.getComputedStyle(item, null).getPropertyValue("font-size"), 10);
-			  while(fontSize > 0 && (item.scrollHeight > item.clientHeight || item.scrollWidth > item.clientWidth)) {
-				  fontSize -= 0.5;
-				  item.style.fontSize = fontSize + "px";
-			  }
-			});
-		};
-	</script>
-
+	<script src="./playtesting_sheet.js"></script>
 	<body>
-		<div class="sheet">
-			<div class="card martell character">
-				<div class="top-panel">
-					<div class="left-panel">
-						<div class="gold-box auto-size">
-							<span class="card-cost">4</span>
-						</div>
-						<div class="type-box">
-							<span class="card-type">Character</span>
-						</div>
-						<div class="challenge-icon-box">
-							<span class="icon-military"></span>
-							<span class="icon-intrigue"></span>
-							<span class="icon-none"></span>
-						</div>
-					</div>
-					<div class="center-panel">
-						<div class="watermark-box">
-                            <span class="card-code">TSoW #24010</span>
-                            <span class="card-version">v1.0</span>
-                            <span class="card-wip">Work in Progress</span>
-						</div>
-					</div>
-					<div class="right-panel">
-						<div class="loyal-box">
-							<span class="card-loyal">Loyal</span>
-						</div>
-					</div>
-				</div>
-				<div class="center-panel">
-					<div class="strength-box auto-size">
-						<span class="card-strength">4</span>
-					</div>
-					<div class="name-box auto-size">
-						<span class="card-unique icon-unique"></span>
-						<span class="card-name">Ser Andrey Dalt</span>
-					</div>
-					<div class="faction-box">
-						<span class="card-faction icon-martell"></span>
-					</div>
-				</div>
-				<div class="bottom-panel">
-                    <div class="text-box">
-                        <div class="traits-box">
-                            <span class="card-traits"><b><i>Knight.</b></i></span>
-                        </div>
-                        <div class="ability-box auto-size">
-                            <span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
-                        <br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
-                        </div>
-                    </div>
-				</div>
-			</div>
-			<div class="card baratheon location">
-				<div class="left-panel">
-					<div class="gold-box auto-size">
-						<span class="card-cost">2</span>
-					</div>
-					<div class="type-box">
-						<span class="card-type">Location</span>
-					</div>
-					<div class="name-box auto-size">
-						<span class="card-unique icon-unique"></span>
-						<span class="card-name">Dragonstone</span>
-					</div>
-					<div class="faction-box">
-						<span class="card-faction icon-baratheon"></span>
-					</div>
-					<div class="loyal-box">
-							<span class="card-loyal">Loyal</span>
-					</div>
-				</div>
-				<div class="right-panel">
-					<div class="watermark-box">
-                        <span class="card-code">TSoW #24003</span>
-                        <span class="card-version">v1.1</span>
-                        <span class="card-wip">Work in Progress</span>
-					</div>
-					<div class="text-box">
-						<div class="traits-box">
-							<span class="card-traits"><b><i>Dragonstone.</b></i></span>
-						</div>
-						<div class="ability-box auto-size">
-							<span class="card-ability">Shadow (2).<br/>Reduce the cost of the first event you play each round by 1.<br/><b>Reaction:</b> After a card is placed in shadows by a card effect, return Dragonstone to shadows to discard that card.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card greyjoy attachment">
-				<div class="top-panel">
-					<div class="left-panel">
-						<div class="gold-box auto-size">
-							<span class="card-cost">1</span>
-						</div>
-						<div class="type-box">
-							<span class="card-type">Attachment</span>
-						</div>
-					</div>
-					<div class="center-panel">
-						<div class="watermark-box">
-                            <span class="card-code">TSoW #24006</span>
-                            <span class="card-version">v1.0</span>
-                            <span class="card-wip">Work in Progress</span>
-						</div>
-					</div>
-					<div class="right-panel">
-					</div>
-				</div>
-				<div class="center-panel">
-					<div class="text-box">
-						<div class="traits-box">
-							<span class="card-traits"><b><i>Item.</b></i></span>
-						</div>
-						<div class="ability-box auto-size">
-							<span class="card-ability">While there are no cards in shadows, attached character gains insight.<br/><b>Reaction:</b> After you win a challenge in which attached character is participating, kneel Myrish Lens to choose and reveal a card in shadows. If it is an event, discard it.</span>
-						</div>
-					</div>
-					<div class="loyal-box">
-						<span class="card-loyal">Loyal</span>
-					</div>
-				</div>
-                <div class="bottom-panel">
-                    <div class="name-box auto-size">
-                        <span class="card-unique icon-none"></span>
-                        <span class="card-name">Myrish Lens</span>
-                    </div>
-                    <div class="faction-box">
-                        <span class="card-faction icon-greyjoy"></span>
-                    </div>
-                </div>
-			</div>
-			<div class="card lannister event">
-				<div class="top-panel">
-					<div class="left-panel">
-						<div class="gold-box auto-size">
-							<span class="card-cost">3</span>
-						</div>
-						<div class="type-box">
-							<span class="card-type">Event</span>
-						</div>
-					</div>
-					<div class="center-panel">
-                        <div class="top-panel">
-                            <div class="name-box auto-size">
-                                <span class="card-name">One, Two, Three</span>
+        <div class="page">
+            <div class="sheet">
+                <div class="card martell character">
+                    <div class="top-panel">
+                        <div class="left-panel">
+                            <div class="gold-box auto-size">
+                                <span class="card-cost">4</span>
+                            </div>
+                            <div class="type-box">
+                                <span class="card-type">Character</span>
+                            </div>
+                            <div class="challenge-icon-box">
+                                <span class="icon-military"></span>
+                                <span class="icon-intrigue"></span>
+                                <span class="icon-none"></span>
                             </div>
                         </div>
-                        <div class="bottom-panel">
+                        <div class="center-panel">
                             <div class="watermark-box">
-                                <span class="card-code">TSoW #24009</span>
-                                <span class="card-version">v1.1</span>
+                                <span class="card-code">TSoW #24010</span>
+                                <span class="card-version">v1.0</span>
                                 <span class="card-wip">Work in Progress</span>
                             </div>
                         </div>
-					</div>
-					<div class="right-panel">
-						<div class="faction-box">
-							<span class="card-faction icon-lannister"></span>
-						</div>
-						<div class="loyal-box">
-							<span class="card-loyal">Loyal</span>
-						</div>
-					</div>
-				</div>
-				<div class="bottom-panel">
-					<div class="text-box">
-						<div class="traits-box auto-size">
-							<span class="card-traits"><b><i></b></i></span>
-						</div>
-						<div class="ability-box auto-size">
-							<span class="card-ability"><b>Reaction:</b> After you win an <span class="icon-intrigue"></span> challenge as the attacking player, return a character to your hand to choose 2 other characters. Until the end of the phase, one gains insight, and treat the other's text box as if it were blank (except for <i>Traits</i>).</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card neutral plot">
-				<div class="rotate">
-					<div class="top-panel">
-						<div class="left-panel">
-							<span class="card-income plot-stat auto-size">4</span>
-							<span class="card-initiative plot-stat auto-size">2</span>
-							<span class="card-claim plot-stat auto-size">2</span>
-						</div>
-						<div class="right-panel">
-							<div class="name-box auto-size">
-								<span class="card-name">Battle of the Camps</span>
-							</div>
-						</div>
-					</div>
-					<div class="center-panel">
-						<div class="left-panel">
-							<div class="type-box">
-								<span class="card-type">Plot</span>
-							</div>
-							<div class="decklimit-box">
-								<span class="card-decklimit">Plot Limit 1</span>
-							</div>
-						</div>
-						<div class="center-panel">
-							<div class="watermark-box">
-								<span class="card-code">TSoW #24030</span>
-								<span class="card-version">v1.0</span>
-								<span class="card-wip">Work in Progress</span>
-							</div>
-						</div>
-						<div class="right-panel">
-							<div class="faction-box">
-								<span class="card-faction icon-neutral"></span>
-							</div>
-							<div class="loyal-box">
-								<span class="card-loyal">Loyal</span>
-							</div>
-							<span class="card-reserve plot-stat auto-size">5</span>
-						</div>
-					</div>
-					<div class="bottom-panel">
-						<div class="text-box">
-							<div class="traits-box auto-size">
-								<span class="card-traits"><b><i>War.</b></i></span>
-							</div>
-							<div class="ability-box auto-size">
-								<span class="card-ability">During <span class="icon-military"></span> challenges, <i>Army</i> characters must be chosen for claim, if able.</span>
-							</div>
-						</div>
-					</div>
-				</div>
+                        <div class="right-panel">
+                            <div class="loyal-box">
+                                <span class="card-loyal">Loyal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-panel">
+                        <div class="strength-box auto-size">
+                            <span class="card-strength">4</span>
+                        </div>
+                        <div class="name-box auto-size">
+                            <span class="card-unique icon-unique"></span>
+                            <span class="card-name">Ser Andrey Dalt</span>
+                        </div>
+                        <div class="faction-box">
+                            <span class="card-faction icon-martell"></span>
+                        </div>
+                    </div>
+                    <div class="bottom-panel">
+                        <div class="text-box">
+                            <div class="traits-box">
+                                <span class="card-traits"><b><i>Knight.</b></i></span>
+                            </div>
+                            <div class="ability-box auto-size">
+                                <span class="card-ability">While there are 3 or fewer cards in shadows, Ser Andrey Dalt gains renown.
+                            <br/><b>Interrupt:</b> When you win dominance, discard 1 card from shadows to choose an opponent and have them win dominance instead.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card baratheon location">
+                    <div class="left-panel">
+                        <div class="gold-box auto-size">
+                            <span class="card-cost">2</span>
+                        </div>
+                        <div class="type-box">
+                            <span class="card-type">Location</span>
+                        </div>
+                        <div class="name-box auto-size">
+                            <span class="card-unique icon-unique"></span>
+                            <span class="card-name">Dragonstone</span>
+                        </div>
+                        <div class="faction-box">
+                            <span class="card-faction icon-baratheon"></span>
+                        </div>
+                        <div class="loyal-box">
+                                <span class="card-loyal">Loyal</span>
+                        </div>
+                    </div>
+                    <div class="right-panel">
+                        <div class="watermark-box">
+                            <span class="card-code">TSoW #24003</span>
+                            <span class="card-version">v1.1</span>
+                            <span class="card-wip">Work in Progress</span>
+                        </div>
+                        <div class="text-box">
+                            <div class="traits-box">
+                                <span class="card-traits"><b><i>Dragonstone.</b></i></span>
+                            </div>
+                            <div class="ability-box auto-size">
+                                <span class="card-ability">Shadow (2).<br/>Reduce the cost of the first event you play each round by 1.<br/><b>Reaction:</b> After a card is placed in shadows by a card effect, return Dragonstone to shadows to discard that card.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card greyjoy attachment">
+                    <div class="top-panel">
+                        <div class="left-panel">
+                            <div class="gold-box auto-size">
+                                <span class="card-cost">1</span>
+                            </div>
+                            <div class="type-box">
+                                <span class="card-type">Attachment</span>
+                            </div>
+                        </div>
+                        <div class="center-panel">
+                            <div class="watermark-box">
+                                <span class="card-code">TSoW #24006</span>
+                                <span class="card-version">v1.0</span>
+                                <span class="card-wip">Work in Progress</span>
+                            </div>
+                        </div>
+                        <div class="right-panel">
+                        </div>
+                    </div>
+                    <div class="center-panel">
+                        <div class="text-box">
+                            <div class="traits-box">
+                                <span class="card-traits"><b><i>Item.</b></i></span>
+                            </div>
+                            <div class="ability-box auto-size">
+                                <span class="card-ability">While there are no cards in shadows, attached character gains insight.<br/><b>Reaction:</b> After you win a challenge in which attached character is participating, kneel Myrish Lens to choose and reveal a card in shadows. If it is an event, discard it.</span>
+                            </div>
+                        </div>
+                        <div class="loyal-box">
+                            <span class="card-loyal">Loyal</span>
+                        </div>
+                    </div>
+                    <div class="bottom-panel">
+                        <div class="name-box auto-size">
+                            <span class="card-unique icon-none"></span>
+                            <span class="card-name">Myrish Lens</span>
+                        </div>
+                        <div class="faction-box">
+                            <span class="card-faction icon-greyjoy"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lannister event">
+                    <div class="top-panel">
+                        <div class="left-panel">
+                            <div class="gold-box auto-size">
+                                <span class="card-cost">3</span>
+                            </div>
+                            <div class="type-box">
+                                <span class="card-type">Event</span>
+                            </div>
+                        </div>
+                        <div class="center-panel">
+                            <div class="top-panel">
+                                <div class="name-box auto-size">
+                                    <span class="card-name">One, Two, Three</span>
+                                </div>
+                            </div>
+                            <div class="bottom-panel">
+                                <div class="watermark-box">
+                                    <span class="card-code">TSoW #24009</span>
+                                    <span class="card-version">v1.1</span>
+                                    <span class="card-wip">Work in Progress</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-panel">
+                            <div class="faction-box">
+                                <span class="card-faction icon-lannister"></span>
+                            </div>
+                            <div class="loyal-box">
+                                <span class="card-loyal">Loyal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-panel">
+                        <div class="text-box">
+                            <div class="traits-box auto-size">
+                                <span class="card-traits"><b><i></b></i></span>
+                            </div>
+                            <div class="ability-box auto-size">
+                                <span class="card-ability"><b>Reaction:</b> After you win an <span class="icon-intrigue"></span> challenge as the attacking player, return a character to your hand to choose 2 other characters. Until the end of the phase, one gains insight, and treat the other's text box as if it were blank (except for <i>Traits</i>).</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card neutral plot">
+                    <div class="rotate">
+                        <div class="top-panel">
+                            <div class="left-panel">
+                                <span class="card-income plot-stat auto-size">4</span>
+                                <span class="card-initiative plot-stat auto-size">2</span>
+                                <span class="card-claim plot-stat auto-size">2</span>
+                            </div>
+                            <div class="right-panel">
+                                <div class="name-box auto-size">
+                                    <span class="card-name">Battle of the Camps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center-panel">
+                            <div class="left-panel">
+                                <div class="type-box">
+                                    <span class="card-type">Plot</span>
+                                </div>
+                                <div class="decklimit-box">
+                                    <span class="card-decklimit">Plot Limit 1</span>
+                                </div>
+                            </div>
+                            <div class="center-panel">
+                                <div class="watermark-box">
+                                    <span class="card-code">TSoW #24030</span>
+                                    <span class="card-version">v1.0</span>
+                                    <span class="card-wip">Work in Progress</span>
+                                </div>
+                            </div>
+                            <div class="right-panel">
+                                <div class="faction-box">
+                                    <span class="card-faction icon-neutral"></span>
+                                </div>
+                                <div class="loyal-box">
+                                    <span class="card-loyal">Loyal</span>
+                                </div>
+                                <span class="card-reserve plot-stat auto-size">5</span>
+                            </div>
+                        </div>
+                        <div class="bottom-panel">
+                            <div class="text-box">
+                                <div class="traits-box auto-size">
+                                    <span class="card-traits"><b><i>War.</b></i></span>
+                                </div>
+                                <div class="ability-box auto-size">
+                                    <span class="card-ability">During <span class="icon-military"></span> challenges, <i>Army</i> characters must be chosen for claim, if able.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card neutral agenda">
+                    <div class="top-panel">
+                        <div class="name-box auto-size">
+                            <span class="card-name">Banner of the Falcon</span>
+                        </div>
+                        <div class="type-box">
+                            <span class="card-name">Agenda</span>
+                        </div>
+                    </div>
+                    <div class="center-panel">
+                        <div class="watermark-box">
+                            <span class="card-code">TSoW #24030</span>
+                            <span class="card-version">v1.0</span>
+                            <span class="card-wip">Work in Progress</span>
+                        </div>
+                    </div>
+                    <div class="bottom-panel">
+                        <div class="text-box">
+                            <div class="traits-box auto-size">
+                                <span class="card-traits"><b><i>Banner. House Arryn.</b></i></span>
+                            </div>
+                            <div class="ability-box auto-size">
+                                <span class="card-ability">You must include at least 12 <i>House Arryn</i> cards in your deck.<br/>While the number of <i>House Arryn</i> cards you control is higher than your initiative value, each loyal character you control gets +1 STR.<br/>-2 Initiative. +1 Reserve.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
             </div>
-			<div class="card neutral agenda">
-				<div class="top-panel">
-					<div class="name-box auto-size">
-						<span class="card-name">Banner of the Falcon</span>
-					</div>
-					<div class="type-box">
-						<span class="card-name">Agenda</span>
-					</div>
-				</div>
-				<div class="center-panel">
-					<div class="watermark-box">
-						<span class="card-code">TSoW #24030</span>
-						<span class="card-version">v1.0</span>
-						<span class="card-wip">Work in Progress</span>
-					</div>
-				</div>
-				<div class="bottom-panel">
-					<div class="text-box">
-						<div class="traits-box auto-size">
-							<span class="card-traits"><b><i>Banner. House Arryn.</b></i></span>
-						</div>
-						<div class="ability-box auto-size">
-							<span class="card-ability">You must include at least 12 <i>House Arryn</i> cards in your deck.<br/>While the number of <i>House Arryn</i> cards you control is higher than your initiative value, each loyal character you control gets +1 STR.<br/>-2 Initiative. +1 Reserve.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
-		</div>
+        </div>
 	</body>
 </html>
