@@ -281,12 +281,17 @@
 body {
   margin: 0px;
   /* A4 @ 96 PPI/DPI */
+}
+
+.page {
   width: 792px;
   height: 1123px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid red;
 }
 
-.sheet {
+.page .sheet {
   height: 100%;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -307,16 +312,17 @@ body {
       align-content: center;
 }
 
-.card {
+.page .card {
   width: calc(240px - 30px);
   height: calc(333px - 30px);
   border-width: 15px;
   border-style: solid;
   border-color: white;
+  background-color: white;
   margin: 2.5px;
 }
 
-.card.character {
+.page .card.character {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +332,7 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.character > .top-panel {
+.page .card.character > .top-panel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -335,14 +341,14 @@ body {
   display: flex;
 }
 
-.card.character > .top-panel > .left-panel, .card.character > .top-panel > .right-panel {
+.page .card.character > .top-panel > .left-panel, .page .card.character > .top-panel > .right-panel {
   width: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card.character > .top-panel > .left-panel {
+.page .card.character > .top-panel > .left-panel {
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -350,7 +356,7 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.character > .top-panel > .left-panel .challenge-icon-box {
+.page .card.character > .top-panel > .left-panel .challenge-icon-box {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -369,7 +375,7 @@ body {
           justify-content: center;
 }
 
-.card.character > .top-panel > .left-panel .challenge-icon-box [class*="icon-"] {
+.page .card.character > .top-panel > .left-panel .challenge-icon-box [class*="icon-"] {
   font-size: 20px;
   height: 33%;
   display: -webkit-box;
@@ -383,7 +389,7 @@ body {
           justify-content: center;
 }
 
-.card.character > .top-panel > .center-panel {
+.page .card.character > .top-panel > .center-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,13 +398,13 @@ body {
           flex-grow: 1;
 }
 
-.card.character > .top-panel > .right-panel {
+.page .card.character > .top-panel > .right-panel {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
 
-.card.character > .center-panel {
+.page .card.character > .center-panel {
   height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,7 +417,7 @@ body {
           align-items: flex-end;
 }
 
-.card.character > .center-panel .strength-box {
+.page .card.character > .center-panel .strength-box {
   height: 35px;
   width: 35px;
   font-size: 22px;
@@ -430,7 +436,7 @@ body {
           justify-content: center;
 }
 
-.card.character > .center-panel .name-box {
+.page .card.character > .center-panel .name-box {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -442,19 +448,19 @@ body {
   border-right: 0px;
 }
 
-.card.character > .bottom-panel .text-box {
+.page .card.character > .bottom-panel .text-box {
   height: 105px;
 }
 
-.card.character > .bottom-panel .text-box .traits-box {
+.page .card.character > .bottom-panel .text-box .traits-box {
   height: 20px;
 }
 
-.card.character > .bottom-panel .text-box .ability-box {
+.page .card.character > .bottom-panel .text-box .ability-box {
   height: 85px;
 }
 
-.card.location {
+.page .card.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,9 +470,8 @@ body {
           flex-flow: row nowrap;
 }
 
-.card.location > .left-panel {
+.page .card.location > .left-panel {
   position: relative;
-  float: left;
   width: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,9 +482,9 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.location > .left-panel .name-box {
+.page .card.location > .left-panel .name-box {
   width: 35px;
-  height: 50%;
+  height: 150px;
   border-top: 0px;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
@@ -492,7 +497,7 @@ body {
           transform: rotate(180deg);
 }
 
-.card.location > .right-panel {
+.page .card.location > .right-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,19 +510,19 @@ body {
           justify-content: space-between;
 }
 
-.card.location > .right-panel .text-box {
+.page .card.location > .right-panel .text-box {
   height: 150px;
 }
 
-.card.location > .right-panel .text-box .traits-box {
+.page .card.location > .right-panel .text-box .traits-box {
   height: 20px;
 }
 
-.card.location > .right-panel .text-box .ability-box {
+.page .card.location > .right-panel .text-box .ability-box {
   height: 130px;
 }
 
-.card.attachment {
+.page .card.attachment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,7 +532,7 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.attachment > .top-panel {
+.page .card.attachment > .top-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,17 +541,17 @@ body {
           flex-grow: 1;
 }
 
-.card.attachment > .top-panel > .left-panel, .card.attachment > .top-panel > .right-panel {
+.page .card.attachment > .top-panel > .left-panel, .page .card.attachment > .top-panel > .right-panel {
   width: 35px;
 }
 
-.card.attachment > .top-panel > .center-panel {
+.page .card.attachment > .top-panel > .center-panel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.card.attachment > .center-panel {
+.page .card.attachment > .center-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,19 +564,19 @@ body {
           align-items: flex-end;
 }
 
-.card.attachment > .center-panel .text-box {
+.page .card.attachment > .center-panel .text-box {
   height: 110px;
 }
 
-.card.attachment > .center-panel .text-box .traits-box {
+.page .card.attachment > .center-panel .text-box .traits-box {
   height: 20px;
 }
 
-.card.attachment > .center-panel .text-box .ability-box {
+.page .card.attachment > .center-panel .text-box .ability-box {
   height: 90px;
 }
 
-.card.attachment > .bottom-panel {
+.page .card.attachment > .bottom-panel {
   height: 35px;
   width: 100%;
   display: -webkit-box;
@@ -579,20 +584,20 @@ body {
   display: flex;
 }
 
-.card.attachment > .bottom-panel .name-box {
+.page .card.attachment > .bottom-panel .name-box {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.card.attachment > .bottom-panel .name-box {
+.page .card.attachment > .bottom-panel .name-box {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-right: 0px;
 }
 
-.card.event {
+.page .card.event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +607,7 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.event > .top-panel {
+.page .card.event > .top-panel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -611,23 +616,23 @@ body {
   display: flex;
 }
 
-.card.event > .top-panel > .left-panel, .card.event > .top-panel > .right-panel {
+.page .card.event > .top-panel > .left-panel, .page .card.event > .top-panel > .right-panel {
   width: 35px;
 }
 
-.card.event > .top-panel > .center-panel {
+.page .card.event > .top-panel > .center-panel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.card.event > .top-panel > .center-panel > .top-panel {
+.page .card.event > .top-panel > .center-panel > .top-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card.event > .top-panel > .center-panel > .top-panel .name-box {
+.page .card.event > .top-panel > .center-panel > .top-panel .name-box {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -637,11 +642,11 @@ body {
   border-right: 0px;
 }
 
-.card.event > .top-panel > .center-panel > .bottom-panel .watermark-box {
+.page .card.event > .top-panel > .center-panel > .bottom-panel .watermark-box {
   padding-top: 25px;
 }
 
-.card.event > .top-panel > .right-panel {
+.page .card.event > .top-panel > .right-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,19 +656,19 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.event > .bottom-panel .text-box {
+.page .card.event > .bottom-panel .text-box {
   height: 150px;
 }
 
-.card.event > .bottom-panel .text-box .traits-box {
+.page .card.event > .bottom-panel .text-box .traits-box {
   height: 20px;
 }
 
-.card.event > .bottom-panel .text-box .ability-box {
+.page .card.event > .bottom-panel .text-box .ability-box {
   height: 130px;
 }
 
-.card.plot > .rotate {
+.page .card.plot > .rotate {
   width: calc(333px - 30px);
   height: calc(240px - 30px);
   -webkit-transform-origin: calc(calc(333px - 30px) * 0.5) calc(calc(333px - 30px) * 0.5);
@@ -679,7 +684,7 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.plot > .rotate .plot-stat {
+.page .card.plot > .rotate .plot-stat {
   height: 32px;
   width: 32px;
   font-size: 24px;
@@ -695,7 +700,7 @@ body {
   text-align: center;
 }
 
-.card.plot > .rotate > .top-panel {
+.page .card.plot > .rotate > .top-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,7 +711,7 @@ body {
   height: 40px;
 }
 
-.card.plot > .rotate > .top-panel > .left-panel {
+.page .card.plot > .rotate > .top-panel > .left-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,32 +727,32 @@ body {
           justify-content: space-between;
 }
 
-.card.plot > .rotate > .top-panel > .left-panel .card-income {
+.page .card.plot > .rotate > .top-panel > .left-panel .card-income {
   border-radius: 50%;
   background-color: #FFD240;
 }
 
-.card.plot > .rotate > .top-panel > .left-panel .card-initiative {
+.page .card.plot > .rotate > .top-panel > .left-panel .card-initiative {
   background-color: #9A6E43;
   border-radius: 10%;
 }
 
-.card.plot > .rotate > .top-panel > .left-panel .card-claim {
+.page .card.plot > .rotate > .top-panel > .left-panel .card-claim {
   border-radius: 50%;
   background-color: #919191;
 }
 
-.card.plot > .rotate > .top-panel > .right-panel {
+.page .card.plot > .rotate > .top-panel > .right-panel {
   width: 193px;
 }
 
-.card.plot > .rotate > .top-panel > .right-panel .name-box {
+.page .card.plot > .rotate > .top-panel > .right-panel .name-box {
   height: 35px;
   font-size: 18px;
   padding: 5px 5px 0px 5px;
 }
 
-.card.plot > .rotate > .center-panel {
+.page .card.plot > .rotate > .center-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,11 +761,11 @@ body {
           flex-grow: 1;
 }
 
-.card.plot > .rotate > .center-panel > .left-panel, .card.plot > .rotate > .center-panel > .right-panel {
+.page .card.plot > .rotate > .center-panel > .left-panel, .page .card.plot > .rotate > .center-panel > .right-panel {
   width: 35px;
 }
 
-.card.plot > .rotate > .center-panel > .left-panel {
+.page .card.plot > .rotate > .center-panel > .left-panel {
   padding-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,7 +776,7 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.plot > .rotate > .center-panel > .left-panel .decklimit-box {
+.page .card.plot > .rotate > .center-panel > .left-panel .decklimit-box {
   font-size: 8px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -794,7 +799,7 @@ body {
           justify-content: center;
 }
 
-.card.plot > .rotate > .center-panel > .center-panel {
+.page .card.plot > .rotate > .center-panel > .center-panel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -809,7 +814,7 @@ body {
           justify-content: center;
 }
 
-.card.plot > .rotate > .center-panel > .right-panel {
+.page .card.plot > .rotate > .center-panel > .right-panel {
   width: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,18 +829,18 @@ body {
   padding-right: 5px;
 }
 
-.card.plot > .rotate > .center-panel > .right-panel .faction-box {
+.page .card.plot > .rotate > .center-panel > .right-panel .faction-box {
   width: 35px;
 }
 
-.card.plot > .rotate > .center-panel > .right-panel .card-reserve {
+.page .card.plot > .rotate > .center-panel > .right-panel .card-reserve {
   border-radius: 30%;
   background-color: #E84F27;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.card.plot > .rotate > .bottom-panel {
+.page .card.plot > .rotate > .bottom-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,20 +850,20 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.plot > .rotate > .bottom-panel .text-box {
+.page .card.plot > .rotate > .bottom-panel .text-box {
   height: 80px;
   padding-bottom: 0px;
 }
 
-.card.plot > .rotate > .bottom-panel .text-box .traits-box {
+.page .card.plot > .rotate > .bottom-panel .text-box .traits-box {
   height: 20px;
 }
 
-.card.plot > .rotate > .bottom-panel .text-box .ability-box {
+.page .card.plot > .rotate > .bottom-panel .text-box .ability-box {
   height: 60px;
 }
 
-.card.agenda {
+.page .card.agenda {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,11 +873,11 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.agenda > .top-panel .name-box {
+.page .card.agenda > .top-panel .name-box {
   height: 35px;
 }
 
-.card.agenda > .top-panel .type-box {
+.page .card.agenda > .top-panel .type-box {
   height: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -885,17 +890,17 @@ body {
           justify-content: center;
 }
 
-.card.agenda > .center-panel {
+.page .card.agenda > .center-panel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.card.agenda > .center-panel .watermark-box {
+.page .card.agenda > .center-panel .watermark-box {
   padding-top: 10px;
 }
 
-.card.agenda > .bottom-panel {
+.page .card.agenda > .bottom-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,14 +910,15 @@ body {
           flex-flow: column nowrap;
 }
 
-.card.agenda > .bottom-panel .text-box {
+.page .card.agenda > .bottom-panel .text-box {
   height: 150px;
 }
 
-.card.agenda > .bottom-panel .text-box .traits-box {
+.page .card.agenda > .bottom-panel .text-box .traits-box {
   height: 20px;
 }
 
-.card.agenda > .bottom-panel .text-box .ability-box {
+.page .card.agenda > .bottom-panel .text-box .ability-box {
   height: 130px;
 }
+/*# sourceMappingURL=playtesting_sheet.css.map */
